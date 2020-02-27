@@ -149,7 +149,7 @@ function! fzf#vim#complete#path_relative(command, ...)
   \ 'prefix':  s:function('s:fname_prefix'),
   \ 'source':  s:function('s:file_source'),
   \ 'options': s:function('s:file_options'),
-  \ 'reducer': s:function('s:generate_relative')}, get(a:000, 0, fzf#wrap())))
+  \ 'reducer': s:function('s:generate_relative')}, get(a:000, 0, skim#wrap())))
 endfunction
 
 function! fzf#vim#complete#path(command, ...)
